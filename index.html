@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sweetness — Homemade Chocolates | Malad East</title>
+<meta name="description" content="Handmade chocolates, festival packs and custom orders in Malad East. Order on WhatsApp.">
+<meta property="og:title" content="Sweetness — Homemade Chocolates">
+<meta property="og:description" content="Handmade with love. Order on WhatsApp.">
+<meta property="og:image" content="images/hero-bar.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--maroon:#5C0E28;--deep:#330715;--gold:#C9A227;--gl:#F1DFA8;--rose:#D9436B;--cream:#FBF1DE;--c2:#F7E6C4;--ink:#2E0A14}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);background-image:radial-gradient(circle at 8% 4%,rgba(201,162,39,.18),transparent 40%),radial-gradient(circle at 95% 90%,rgba(217,67,107,.14),transparent 45%);font-family:'Poppins',system-ui,sans-serif;color:var(--ink);padding-bottom:6rem}
+.wrap{max-width:480px;margin:0 auto}.pad{padding:0 1.1rem}
+.hero{position:relative;height:340px;overflow:hidden;background:var(--deep)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block;animation:zoom 14s ease-out both}
+@keyframes zoom{from{transform:scale(1.15)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(51,7,21,.25),rgba(51,7,21,.3) 40%,rgba(51,7,21,.92))}
+.ht{position:absolute;left:0;right:0;bottom:0;padding:0 1.3rem 1.4rem;text-align:center;z-index:2}
+.eyebrow{font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gl);font-weight:600}
+.brand{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:3.6rem;line-height:1;color:#fff;margin:.25rem 0 .1rem;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+.sub{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.2rem;letter-spacing:.08em;color:var(--gl);text-transform:uppercase}
+.cta{display:inline-block;margin-top:.9rem;background:linear-gradient(135deg,var(--gold),#e6c65a);color:var(--deep);font-weight:600;font-size:.8rem;padding:.6rem 1.4rem;border-radius:30px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.thread{height:6px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,var(--rose) 10px 20px,var(--maroon) 20px 30px)}
+.badges{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;padding:1rem 1rem 0}
+.badges span{font-size:.7rem;background:#fff;border:1px solid var(--c2);color:var(--maroon);padding:.3rem .7rem;border-radius:20px;font-weight:500}
+.gallery{display:flex;gap:10px;overflow-x:auto;padding:1rem 1.1rem;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gallery::-webkit-scrollbar{display:none}
+.gallery img{width:130px;height:165px;object-fit:cover;border-radius:16px;flex:0 0 auto;scroll-snap-align:start;box-shadow:0 6px 16px rgba(58,8,23,.22);border:2px solid #fff}
+.tagline{text-align:center;font-size:.85rem;color:#7a4a58;padding:0 1.4rem}
+.menu{margin-top:2rem}
+.st{text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.4rem;color:var(--maroon);margin-bottom:1.1rem;line-height:1.25}
+.card{background:#fffaf1;border:1px solid var(--c2);border-radius:20px;margin-bottom:1.2rem;box-shadow:0 6px 18px rgba(58,8,23,.1);overflow:hidden;opacity:0;transform:translateY(18px);transition:.6s}
+.card.in{opacity:1;transform:none}
+.cp{width:100%;height:170px;object-fit:cover;display:block}
+.cb{padding:1rem 1.15rem 1.1rem}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem}
+.cn{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.02rem;color:var(--deep)}
+.note{font-size:.66rem;background:var(--gl);color:#5c4a10;padding:.18rem .55rem;border-radius:20px;font-weight:600;white-space:nowrap}
+.row{display:flex;justify-content:space-between;align-items:center;padding:.65rem 0;border-bottom:1px dashed #eadfc6;font-size:.9rem;gap:.6rem}
+.row:last-child{border-bottom:none}
+.row.col{flex-direction:column;align-items:stretch;gap:.5rem}
+.info{flex:1;min-width:0;display:flex;flex-direction:column;gap:.1rem}
+.nm{color:#4a2430}.pr{color:var(--rose);font-weight:600;font-size:.82rem}
+.btn{display:inline-flex;align-items:center;gap:.3rem;background:var(--maroon);color:#fdf0e6;font:600 .72rem 'Poppins',sans-serif;padding:.4rem .75rem;border-radius:20px;text-decoration:none;white-space:nowrap;flex-shrink:0;border:none;cursor:pointer}
+.btn svg{width:12px;height:12px}.btn:active{background:var(--rose)}
+.ctl{display:flex;gap:.5rem}
+select{flex:1;min-width:0;font:.78rem 'Poppins',sans-serif;color:var(--deep);background:#fff;border:1px solid var(--c2);border-radius:10px;padding:.5rem .4rem}
+.end{align-self:flex-end}
+.promise{text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:#7a4a58;font-size:1.15rem;margin:2rem 0;line-height:1.5;padding:0 1.4rem}
+footer{text-align:center;margin:0 1.1rem;padding-top:1.2rem;border-top:1px solid var(--c2);font-size:.8rem;color:#7a4a58}
+footer a{color:var(--maroon);font-weight:600;text-decoration:none}
+footer .c{margin-top:.6rem;font-size:.7rem;letter-spacing:.04em;color:var(--rose);font-weight:600}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25D366;color:#fff;font:600 .85rem 'Poppins',sans-serif;padding:.75rem 1.1rem;border-radius:40px;text-decoration:none;display:flex;align-items:center;gap:.45rem;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:20}
+.fab svg{width:18px;height:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero"><img src="images/hero-bar.jpg" alt="Handmade dark chocolate bar">
+<div class="ht"><div class="eyebrow">Handmade with love</div><div class="brand">Sweetness</div><div class="sub">Homemade Chocolates</div>
+<a class="cta" href="#menu">View Menu</a></div></div>
+<div class="thread"></div>
+<div class="badges"><span>🍫 Handmade</span><span>🎁 Festival packs</span><span>✨ Custom orders</span></div>
+<div class="gallery">
+<img src="images/rose.jpg" alt="Rose shaped chocolates" loading="lazy">
+<img src="images/hearts.jpg" alt="Heart shaped chocolates" loading="lazy">
+<img src="images/flower.jpg" alt="Flower shaped chocolates" loading="lazy">
+<img src="images/cups.jpg" alt="Chocolate cups" loading="lazy">
+<img src="images/bar.jpg" alt="Chocolate bar" loading="lazy">
+<img src="images/hero-bar.jpg" alt="Heart pattern chocolate bar" loading="lazy">
+</div>
+<p class="tagline">Homemade chocolates, made with love just for you</p>
+<section class="menu pad" id="menu">
+<div class="st">Delicious handmade chocolates for a perfect celebration</div>
+<div id="items"></div>
+</section>
+<p class="promise">Every piece handmade with love, just for you.</p>
+<footer>
+<div>Call or WhatsApp <a href="tel:+918355806467">+91 83558 06467</a></div>
+<div style="margin-top:.3rem">Malad East</div>
+<div class="c">Custom orders available &middot; Festival packs available</div>
+</footer>
+</div>
+<a class="fab" id="fab" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>Order on WhatsApp</a>
+<script>
+var PHONE="918355806467";
+var ICON='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>';
+function wa(t){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(t)}
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function item(n,p,box){
+  var t="Hi! I'd like to order "+(box?"a "+n+" box (6 pieces)":"a "+n)+", Rs "+p+".";
+  return '<div class="row"><div class="info"><span class="nm">'+esc(n)+'</span><span class="pr">Rs '+p+'</span></div><a class="btn" href="'+wa(t)+'">'+ICON+'Order</a></div>';
+}
+var single=[["Dark Chocolate",90],["Milk Chocolate",90],["White Chocolate",90],["Crispy Chocolate",90],["Tuttifuti Chocolate",120],["Dry Fruit Chocolate",150],["Rasmalai Chocolate",180]];
+var dbl=[["Rose & White Chocolate",150],["Mango & White Chocolate",150],["Rose & Mango Chocolate",150],["Dark & White Chocolate",150]];
+var flavors=["Dark Chocolate","Milk Chocolate","White Chocolate","Dry Fruit Chocolate"];
+function opts(sel){return flavors.map(function(f){return '<option'+(f===sel?' selected':'')+'>'+f+'</option>'}).join("")}
+function card(photo,name,note,body){return '<div class="card"><img class="cp" src="images/'+photo+'" alt="'+name+'" loading="lazy"><div class="cb"><div class="ch"><div class="cn">'+name+'</div><div class="note">'+note+'</div></div>'+body+'</div></div>'}
+var bars=
+ '<div class="row col"><div class="info"><span class="nm">Single flavor bar</span><span class="pr">Rs 130</span></div><div class="ctl"><select id="s1">'+opts("Dark Chocolate")+'</select><button class="btn" type="button" onclick="orderSingle()">'+ICON+'Order</button></div></div>'+
+ '<div class="row col"><div class="info"><span class="nm">Double flavor bar</span><span class="pr">Rs 130</span></div><div class="ctl"><select id="d1">'+opts("Dark Chocolate")+'</select><select id="d2">'+opts("Milk Chocolate")+'</select></div><button class="btn end" type="button" onclick="orderDouble()">'+ICON+'Order</button></div>'+
+ item("Festival Special Chocolate Bar",180,false);
+document.getElementById("items").innerHTML=
+ card("cups.jpg","Single flavor chocolate","6-piece box",single.map(function(i){return item(i[0],i[1],true)}).join(""))+
+ card("flower.jpg","Double flavor chocolate","6-piece box",dbl.map(function(i){return item(i[0],i[1],true)}).join(""))+
+ card("bar.jpg","Chocolate bars with flavours","per piece",bars);
+function orderSingle(){location.href=wa("Hi! I'd like to order a Single Flavor Chocolate Bar ("+document.getElementById("s1").value+"), Rs 130.")}
+function orderDouble(){location.href=wa("Hi! I'd like to order a Double Flavor Chocolate Bar ("+document.getElementById("d1").value+" + "+document.getElementById("d2").value+"), Rs 130.")}
+document.getElementById("fab").href=wa("Hi! I'd like to place a chocolate order.");
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.08});
+document.querySelectorAll(".card").forEach(function(c){io.observe(c)});
+</script>
+</body>
+</html>
